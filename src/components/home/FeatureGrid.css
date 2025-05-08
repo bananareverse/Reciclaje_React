@@ -1,0 +1,75 @@
+/* FeatureGrid.css */
+
+.feature-grid {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1rem;
+    flex-wrap: nowrap;    /* evita que pasen a la siguiente línea */
+    overflow-x: auto;  
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  @media (min-width: 768px) {
+    .feature-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .feature-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background-color: #e9f5e9; /* verde muy suave */
+    padding: 1.25rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .feature-item {
+    /* Ancho fijo */
+    width: 30px;
+    /* O mínimo/máximo */
+    min-width: 200px;
+    max-width: 300px;
+    /* Altura mínima */
+    min-height: 10px;
+  }
+  
+  
+  .feature-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  .feature-icon {
+    color: #40916c; /* verde medio */
+    flex-shrink: 0;
+  }
+  
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 0;
+    color: #2d6a4f; /* verde oscuro */
+  }
+  
+  .feature-text {
+    font-size: 0.95rem;
+    margin: 0.25rem 0 0;
+    color: #40513b; /* tono medio */
+  }
+  

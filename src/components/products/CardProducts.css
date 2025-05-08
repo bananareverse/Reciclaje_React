@@ -1,0 +1,120 @@
+/* CardProduct.css */
+
+.card-product {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .card-product:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  }
+  
+  .card-link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+  
+  .card-image-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9fafb;
+  }
+  .card-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+  }
+  .card-link:hover .card-image {
+    transform: scale(1.05);
+  }
+  
+  .card-button {
+    position: absolute;
+    bottom: 0.5rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(100%);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #40916c;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  .card-link:hover .card-button {
+    transform: translateX(-50%) translateY(0);
+  }
+  .card-button:hover {
+    background: #2d6a4f;
+  }
+  
+  .card-info {
+    padding: 0 1rem 1rem;
+    text-align: center;
+  }
+  .card-name {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d6a4f;
+    margin: 0.5rem 0 0.25rem;
+  }
+  .card-price {
+    font-size: 0.875rem;
+    color: #40513b;
+    margin: 0;
+  }
+  
+  .card-colors {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .color-circle {
+    width: 1.25rem;
+    height: 1.25rem;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    transition: border-color 0.2s ease;
+  }
+  .color-circle.active {
+    border-color: #40916c;
+  }
+  .color-inner {
+    width: 0.875rem;
+    height: 0.875rem;
+    border-radius: 50%;
+  }
+  
+  .card-stock {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    background: rgba(255,255,255,0.9);
+    color: #d32f2f;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+  }
+  

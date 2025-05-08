@@ -1,0 +1,49 @@
+/* Logo.css */
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+  }
+
+  .logo:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo-text {
+    color: #3ec452; 
+  }
+  
+  
+  .logo-desktop {
+    display: none;
+  }
+  
+  .logo-mobile {
+    display: flex;
+    font-size: 2.5rem;
+  }
+  
+  .skew-left {
+    display: inline-block;
+    transform: skewX(-12deg);
+  }
+  
+  .skew-right {
+    display: inline-block;
+    transform: skewX(12deg);
+  }
+  
+  /* Mostrar/ocultar según tamaño pantalla */
+  @media (min-width: 1024px) {
+    .logo-desktop {
+      display: block;
+    }
+  
+    .logo-mobile {
+      display: none;
+    }
+  }
+  

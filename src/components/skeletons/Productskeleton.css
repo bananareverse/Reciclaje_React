@@ -1,0 +1,39 @@
+.skeleton-wrapper {
+	margin-top: 5rem; /* equivalent to my-20 */
+	margin-bottom: 5rem;
+}
+
+.skeleton-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	gap: 2rem 1rem;
+	animation: pulse 1.5s infinite;
+}
+
+@media (min-width: 640px) {
+	.skeleton-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.skeleton-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.skeleton-card {
+	height: 250px;
+	background-color: #e5e7eb; /* Tailwind gray-200 */
+	border-radius: 0.5rem;
+}
+
+/* Optional: Smooth pulsing animation */
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.5;
+	}
+}

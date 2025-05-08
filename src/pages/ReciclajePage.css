@@ -1,0 +1,83 @@
+/* ReciclajePage.css */
+
+/* Contenedor general */
+.reciclaje-page {
+    padding: 2rem 1rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .reciclaje-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: #2d6a4f;
+  }
+  
+  /* Layout de filtro + productos */
+  .reciclaje-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  /* Filtro siempre visible encima en móvil */
+  .reciclaje-filter {
+    /* puedes añadir fondo o padding si quieres */
+  }
+  
+  /* Contenido principal */
+  .reciclaje-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  /* Grid interno de productos */
+  .products-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .reciclaje-layout {
+      grid-template-columns: 1fr 2fr; /* filtro 1fr, contenido 2fr */
+    }
+    .products-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .reciclaje-layout {
+      grid-template-columns: 1fr 3fr; /* filtro 1fr, contenido 3fr */
+    }
+    .products-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .products-grid {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+
+  /* Loading.css */
+
+.loading-container {
+  grid-column: span 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+}
+
+.loading-text {
+  font-size: 2rem; /* equivalente a text-2xl */
+}
+
+  

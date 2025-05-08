@@ -1,0 +1,50 @@
+/* ContainerFilter.css */
+
+.filter-box {
+    padding: 1.25rem;
+    border: 1px solid #e2e8f0; /* slate-200 */
+    border-radius: 0.5rem;
+    height: fit-content;
+  }
+  
+  .filter-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+  
+  .filter-section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .filter-subtitle {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  
+  .filter-options {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .filter-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .filter-checkbox {
+    accent-color: #fbfbfb; /* matching Tailwind 'accent-black' */
+    border: 1px solid #000;
+  }
+  
+  .filter-label-text {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    color: #ffffff;
+  }
+  

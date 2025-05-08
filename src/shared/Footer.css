@@ -1,0 +1,101 @@
+.footer {
+    background-color: #1b4332; /* Verde oscuro */
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footer-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
+
+    .footer-logo:hover {
+        text-decoration: none;
+        color: white; 
+    }
+  
+  .logo-text {
+    color: #95d5b2; /* Verde claro */
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-socials a {
+    margin-left: 1rem;
+    color: #b7e4c7;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+  }
+  
+  .footer-socials a:hover {
+    color: #52b788; /* Hover verde brillante */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .footer-section h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.125rem;
+    color: #d8f3dc;
+  }
+  
+  .footer-section p,
+  .footer-section a {
+    color: #e9f5e9;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+  }
+  
+  .footer-section .icon {
+    margin-right: 0.5rem;
+    color: #74c69d;
+  }
+  
+  .footer-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-form input {
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    font-size: 0.95rem;
+    flex: 1;
+  }
+  
+  .footer-form button {
+    padding: 0.5rem 1rem;
+    background-color: #40916c; /* Verde medio */
+    color: white;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+  }
+  
+  .footer-form button:hover {
+    background-color: #2d6a4f;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #b7e4c7;
+  }
+  

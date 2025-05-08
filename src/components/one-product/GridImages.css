@@ -1,0 +1,51 @@
+.image-gallery {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 0.75rem;
+	position: relative;
+}
+
+.main-image-container {
+	background-color: #f2f2f2;
+	height: 500px;
+	padding: 1rem;
+}
+
+.main-image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+.thumbnails {
+	display: flex;
+	margin-top: 1rem;
+	gap: 0.5rem;
+}
+
+.thumbnail-button {
+	width: 4rem;
+	height: 4rem;
+	padding: 0.25rem;
+	border: 1px solid transparent;
+	border-radius: 0.5rem;
+	transition: border 0.2s ease-in-out;
+}
+
+.thumbnail-button:hover,
+.thumbnail-button:focus {
+	border-color: black;
+	outline: none;
+}
+
+.thumbnail-button.active {
+	border-color: black;
+}
+
+.thumbnail-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.5rem;
+}
